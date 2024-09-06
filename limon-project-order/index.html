@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Shop</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white">
+      <nav
+        class="container mx-auto p-4 flex justify-center items-center font-bold"
+      >
+        <a href="#" class="text-2xl">Bike Shop</a>
+        <button class="block md:hidden text-gray-200 focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden md:flex flex-grow justify-center space-x-4">
+          <a href="/index.html" class="hover:text-gray-300">Home</a>
+          <a href="/shop.html" class="hover:text-gray-300">Shop Bikes</a>
+          <a href="/about.html" class="hover:text-gray-300">About Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content (Shop Page) -->
+    <main class="container mx-auto">
+        <div id="carousel" class="relative mx-4" style="height: 80vh;">
+            <div class="carousel-item active h-full">
+                <img src="images/carosol/bike-caro1.jpg" class="w-full h-full object-cover" alt="Slide 1" />
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white px-4 py-2">
+                    <h2 class="text-2xl">High-Performance Bikes</h2>
+                    <p>Explore our range of high-performance bikes.</p>
+                </div>
+            </div>
+            <div class="carousel-item h-full">
+                <img src="images/carosol/bike-caro2.jpg" class="w-full h-full object-cover" alt="Slide 2" />
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white px-4 py-2">
+                    <h2 class="text-2xl">Mountain Bikes</h2>
+                    <p>Conquer any terrain with our mountain bikes.</p>
+                </div>
+            </div>
+            <div class="carousel-item h-full">
+                <img src="images/carosol/bike-caro3.jpg" class="w-full h-full object-cover" alt="Slide 3" />
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white px-4 py-2">
+                    <h2 class="text-2xl">City Bikes</h2>
+                    <p>Perfect for urban commuting and leisure rides.</p>
+                </div>
+            </div>
+            <!-- Previous and Next buttons -->
+            <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2" onclick="prevSlide()">
+                &#10094;
+            </button>
+            <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2" onclick="nextSlide()">
+                &#10095;
+            </button>
+        </div>
+        
+      <!-- hero -->
+      <section class="flex items-center justify-center my-4 bg-blue-100">
+        <div class="container mx-auto px-6 py-12 md:flex md:items-center md:justify-between">
+          <div class="md:w-1/2">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-900 leading-tight">
+              Elevate Your Riding Experience
+            </h1>
+            <p class="mt-4 text-xl text-gray-700">
+              Discover our range of premium bikes and gear designed to make every ride unforgettable.
+            </p>
+            <a href="shop.html" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white text-lg px-6 py-3 rounded-full">
+              Shop Now
+            </a>
+          </div>
+          <div class="md:w-1/2 mt-8 md:mt-0">
+            <img src="images/bike3.jpg" alt="Bike" class="w-5/6 h object-cover rounded-lg shadow-lg">
+          </div>
+        </div>
+      </section>
+      
+   
+      <!-- feature section  -->
+      <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">
+            Featured Bikes
+          </h2>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+          >
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                src="images/bp1.png"
+                alt="Bike 1"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Mountain Bike
+                </h3>
+                <p class="text-gray-600">$499.99</p>
+                <a
+                  href="product1.html"
+                  class="block mt-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-sm py-2 px-4 rounded"
+                  >View Product</a
+                >
+              </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                src="images/bp2.png"
+                alt="Bike 1"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Mountain Bike
+                </h3>
+                <p class="text-gray-600">$499.99</p>
+                <a
+                  href="product1.html"
+                  class="block mt-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-sm py-2 px-4 rounded"
+                  >View Product</a
+                >
+              </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                src="images/bp3.png"
+                alt="Bike 1"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Mountain Bike
+                </h3>
+                <p class="text-gray-600">$499.99</p>
+                <a
+                  href="product1.html"
+                  class="block mt-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-sm py-2 px-4 rounded"
+                  >View Product</a
+                >
+              </div>
+            </div>
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                src="images/bp4.png"
+                alt="Bike 1"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Mountain Bike
+                </h3>
+                <p class="text-gray-600">$499.99</p>
+                <a
+                  href="product1.html"
+                  class="block mt-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-sm py-2 px-4 rounded"
+                  >View Product</a
+                >
+              </div>
+            </div>
+            <!-- Repeat for other products -->
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-semibold text-gray-800 mb-6">What Our Customers Say</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <p class="text-gray-600 mb-4">"Great selection of bikes and excellent customer service. Highly recommend!"</p>
+              <h4 class="text-xl font-semibold text-gray-800">John Doe</h4>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <p class="text-gray-600 mb-4">"Great selection of bikes and excellent customer service. Highly recommend!"</p>
+              <h4 class="text-xl font-semibold text-gray-800">John Doe</h4>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <p class="text-gray-600 mb-4">"Great selection of bikes and excellent customer service. Highly recommend!"</p>
+              <h4 class="text-xl font-semibold text-gray-800">John Doe</h4>
+            </div>
+            <!-- Repeat for other testimonials -->
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".carousel-item");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("hidden", i !== index);
+        });
+      }
+
+      function prevSlide() {
+        currentSlide = currentSlide > 0 ? currentSlide - 1 : slides.length - 1;
+        showSlide(currentSlide);
+      }
+
+      function nextSlide() {
+        currentSlide = currentSlide < slides.length - 1 ? currentSlide + 1 : 0;
+        showSlide(currentSlide);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        showSlide(currentSlide);
+      });
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- About Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <p class="text-sm">
+              Bike Shop is your ultimate destination for high-quality bikes. We
+              aim to provide a wide range of bikes to suit every rider's needs
+              and preferences.
+            </p>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="text-sm">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Contact Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+            <p class="text-sm">
+              123 Bike Street<br />Cityville, State 12345<br />Email:
+              info@bikeshop.com<br />Phone: 123-456-7890
+            </p>
+          </div>
+          <!-- Social Media -->
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-sm">Facebook</a>
+              <a href="#" class="text-sm">Twitter</a>
+              <a href="#" class="text-sm">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

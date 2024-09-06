@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Music Band</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+
+    <style>
+      html {
+        position: relative;
+        height: 100vh;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-dark text-white p-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <img src="/images/music3-logo.jpg" width="35" height="35" class="d-inline-block align-top rounded-pill" alt="Book Market Logo">
+              
+            </a>
+          </div>
+          <div class="col-md-4 text-center">
+            <!-- Site Name (Centered) -->
+            <h1 class="site-name">Music Band</h1>
+          </div>
+          <div class="col-md-4">
+            <!-- Navigation Menu (Right-aligned) -->
+            <nav
+              class="navbar navbar-expand-lg navbar-light justify-content-end"
+            >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-white font-weight-bold"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-white font-weight-bold"
+                      href="contact.html"
+                      >Contact</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-white font-weight-bold"
+                      href="tour.html"
+                      >Tour</a
+                    >
+                  </li>
+                  <!-- Add more navigation items as needed -->
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content - Contact Page -->
+    <main class="container my-5">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <!-- Contact Form -->
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-white py-2 mt-2">
+      <div class="container text-center relative">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Contact Us</h5>
+            <p>Email: info@musicband.com</p>
+            <p>Phone: +123490</p>
+          </div>
+          <div class="col-md-6">
+            <h5>Follow Us</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Facebook</a></li>
+              <li class="list-inline-item"><a href="#">Twitter</a></li>
+              <li class="list-inline-item"><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <p>&copy; 2024 Music Band. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

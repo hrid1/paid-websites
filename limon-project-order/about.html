@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Shop</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white">
+      <nav
+        class="container mx-auto p-4 flex justify-center items-center font-bold"
+      >
+        <a href="#" class="text-2xl">Bike Shop</a>
+        <button class="block md:hidden text-gray-200 focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden md:flex flex-grow justify-center space-x-4">
+          <a href="index.html" class="hover:text-gray-300">Home</a>
+          <a href="/shop.html" class="hover:text-gray-300">Shop Bikes</a>
+          <a href="/about.html" class="hover:text-gray-300">About Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content (Shop Page) -->
+    <main class="container mx-auto px-6 py-12">
+      <!-- why we choose -->
+      <section id="why-choose-us" class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-semibold text-center mb-8">Why Choose Us</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-indigo-500 mb-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm0 2a6 6 0 0 0-6 6c0 1.699.574 3.258 1.531 4.5L5 16l2-2 2 2 2-2 1.469 1.469c.957-1.242 1.531-2.801 1.531-4.5a6 6 0 0 0-6-6zm2 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold mb-2">Quality Products</h3>
+              <p class="text-center">
+                We offer only the highest quality products, ensuring your
+                satisfaction.
+              </p>
+            </div>
+            <div class="flex flex-col items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-indigo-500 mb-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M13.73 2.733A4.99 4.99 0 0 1 16 7.13V9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.129c0-2.318 1.999-4.274 4.707-4.396A1.502 1.502 0 0 1 11 4.25a1.5 1.5 0 0 1 1.73-1.517zM10 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold mb-2">Great Customer Service</h3>
+              <p class="text-center">
+                Our dedicated team is always here to assist you with any
+                questions or concerns.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-indigo-500 mb-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M10 2a8 8 0 0 1 5.657 13.657l-4.95-4.95A2.5 2.5 0 1 0 8.05 12.05l4.95 4.95A8 8 0 1 1 10 2zm-1.414 1.414A6 6 0 1 0 13.636 15.05l-4.95-4.95z"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold mb-2">Fast Delivery</h3>
+              <p class="text-center">
+                We ensure prompt delivery of your orders, so you can enjoy your
+                products sooner.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="h-4">
+      
+      <section id="about" class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-semibold text-center mb-8">About Us</h2>
+          <div class="flex flex-col md:flex-row justify-between w-full">
+            <div class="w-1/2 px-4">
+             <div class="w-4/5 ml-10">
+
+                <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    euismod nisl et sapien hendrerit ultricies. Duis sodales est
+                    quis justo vestibulum, vel blandit magna suscipit. Fusce ut
+                    felis vitae lectus tempus luctus.
+                  </p>
+                  <p class="mb-4">
+                    Vestibulum in leo vel nisi volutpat posuere. Sed auctor velit
+                    sit amet odio molestie, vel luctus enim ullamcorper.
+                  </p>
+
+             </div>
+            </div>
+            <div class="md:w-1/2 p-2 px-4 ml-12">
+              <h3 class="text-lg font-semibold mb-4">Contact Details</h3>
+              <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+              <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+              <p><strong>Email:</strong> info@example.com</p>
+              <p><strong>Hours:</strong> Monday - Friday: 9am - 5pm</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- About Us -->
+          <div class="">
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <p class="text-sm">
+              Bike Shop is your ultimate destination for high-quality bikes. We
+              aim to provide a wide range of bikes to suit every rider's needs
+              and preferences.
+            </p>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="text-sm">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Contact Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+            <p class="text-sm">
+              123 Bike Street<br />Cityville, State 12345<br />Email:
+              info@bikeshop.com<br />Phone: 123-456-7890
+            </p>
+          </div>
+          <!-- Social Media -->
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-sm">Facebook</a>
+              <a href="#" class="text-sm">Twitter</a>
+              <a href="#" class="text-sm">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

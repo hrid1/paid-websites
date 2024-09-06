@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - SuchRah's Restaurant</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <img
+          class="rounded-pill me-2"
+          src="./images/logo2.png"
+          width="50"
+          height="50"
+          alt="dd"
+        />
+        <a class="navbar-brand fw-semibold ml-2" href="#">
+          <span style="color: red;">SuchRah's Delights</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2>Menu</h2>
+            <p>Explore our delicious offerings</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Dish</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Chicken Alfredo Pasta</td>
+                  <td>
+                    Classic pasta dish with creamy Alfredo sauce and grilled
+                    chicken
+                  </td>
+                  <td>$12.99</td>
+                </tr>
+                <tr>
+                  <td>Margherita Pizza</td>
+                  <td>
+                    Traditional pizza topped with fresh tomatoes, mozzarella,
+                    and basil
+                  </td>
+                  <td>$10.99</td>
+                </tr>
+                <tr>
+                  <td>Grilled Salmon</td>
+                  <td>
+                    Fresh salmon fillet grilled to perfection and served with
+                    seasonal vegetables
+                  </td>
+                  <td>$15.99</td>
+                </tr>
+                <tr>
+                  <td>Vegetable Stir-Fry</td>
+                  <td>
+                    Assorted fresh vegetables stir-fried in a savory sauce,
+                    served with rice
+                  </td>
+                  <td>$9.99</td>
+                </tr>
+                <tr>
+                  <td>Beef Tacos</td>
+                  <td>
+                    Soft tortillas filled with seasoned ground beef, lettuce,
+                    cheese, and salsa
+                  </td>
+                  <td>$8.99</td>
+                </tr>
+                <!-- Add more rows as needed -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Dietary Information Section -->
+    <section id="special-dietary-info" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2>Special Dietary Information</h2>
+            <p>
+              At SuchRah's Restaurant, we accommodate various dietary needs and
+              preferences.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="/images/homemenu/vegan1.jpg"
+                class="card-img-top"
+                alt="Vegetarian"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vegetarian</h5>
+                <p class="card-text">
+                  We offer a wide selection of vegetarian dishes made with
+                  fresh, locally sourced ingredients.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="/images/homemenu/vegan3.jpg"
+                class="card-img-top"
+                alt="Vegan"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vegan</h5>
+                <p class="card-text">
+                  Our vegan options are crafted with care to provide delicious
+                  and satisfying meals without any animal products.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="/images/homemenu/vegan2.jpg"
+                class="card-img-top"
+                alt="Gluten-Free"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Gluten-Free</h5>
+                <p class="card-text">
+                  For those with gluten sensitivities, we have gluten-free
+                  alternatives available for many of our menu items.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br /><br /><br />
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-2 fixed-bottom">
+      <div class="container text-center">
+        <p>&copy; 2024 SuchRah's Restaurant. All Rights Reserved. |</p>
+        <p>
+          <a class="text-decoration-none" href="/privacy-policy"
+            >Privacy Policy</a
+          >
+          |
+          <a class="text-decoration-none" href="/terms-of-service"
+            >Terms of Service</a
+          >
+          |
+          <a class="text-decoration-none" href="/contact-us">Contact Us</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

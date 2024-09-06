@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Search Website</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+     <!-- Navbar -->
+     <nav class="bg-gray-100 p-4 shadow-md">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center">
+          <!-- Logo -->
+          <span class="text-2xl font-bold text-green-500">Elect</span>
+          <span class="text-2xl font-bold text-gray-900">Job</span>
+        </div>
+        <div class="flex space-x-6">
+          <!-- Navigation Links -->
+          <a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a>
+          <a href="/about.html" class="text-gray-700 hover:text-gray-900">About</a>
+          <a href="/career.html" class="text-gray-700 hover:text-gray-900"
+            >Career </a
+          >
+          <a
+            href="/register.html"
+            class="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600"
+            >Register</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- main section -->
+
+    <main class="bg-gray-50">
+      <!-- table -->
+      <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold mb-4 text-center">
+            Job <span class="text-green-500">Listing</span>
+          </h2>
+          <div class="overflow-x-auto">
+            <table class="min-w-full bg-gray-100 rounded-lg shadow-md">
+              <thead>
+                <tr class="bg-green-200 border-b">
+                  <th class="py-3 px-6 text-left">Job Title</th>
+                  <th class="py-3 px-6 text-left">Company</th>
+                  <th class="py-3 px-6 text-left">Location</th>
+                  <th class="py-3 px-6 text-left">Date Posted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b hover:bg-gray-50">
+                  <td class="py-3 px-6">Software Engineer</td>
+                  <td class="py-3 px-6">Tech Corp</td>
+                  <td class="py-3 px-6">San Francisco, CA</td>
+                  <td class="py-3 px-6">May 20, 2024</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                  <td class="py-3 px-6">Product Manager</td>
+                  <td class="py-3 px-6">Innovate Inc</td>
+                  <td class="py-3 px-6">New York, NY</td>
+                  <td class="py-3 px-6">May 18, 2024</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                  <td class="py-3 px-6">UI/UX Designer</td>
+                  <td class="py-3 px-6">Creative Studio</td>
+                  <td class="py-3 px-6">Austin, TX</td>
+                  <td class="py-3 px-6">May 15, 2024</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-6">Data Analyst</td>
+                    <td class="py-3 px-6">Data Insights</td>
+                    <td class="py-3 px-6">Chicago, IL</td>
+                    <td class="py-3 px-6">May 12, 2024</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-6">Marketing Specialist</td>
+                    <td class="py-3 px-6">Brand Company </td>
+                    <td class="py-3 px-6">New York, US </td>
+                    <td class="py-3 px-6">May 23, 2024 </td>
+                    
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="flex gap-4 justify-center my-4">
+        <div class="w-1/2">
+          <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              How It <span class="text-green-500">Works</span>
+            </h2>
+            <div class="flex items-start mb-6">
+              <div class="bg-green-100 text-green-500 rounded-full p-2">
+                <!-- Icon for Create your account -->
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 11c0 .35-.06.68-.17 1H12m0-7a4 4 0 00-4 4v1c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-1a4 4 0 00-4-4z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Create your account
+                </h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque vel augue eget arcu dictum blandit.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start mb-6">
+              <div class="bg-green-100 text-green-500 rounded-full p-2">
+                <!-- Icon for Upload your CV -->
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 4v16h16V8l-6-6H4zm0 0h6v6h6"
+                  ></path>
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Upload your CV
+                </h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  vitae aliquet elit. Integer facilisis posuere risus.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 text-green-500 rounded-full p-2">
+                <!-- Icon for Apply your dream job -->
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m-3-7a5 5 0 110 10 5 5 0 010-10zm-2 5a7 7 0 1114 0 7 7 0 01-14 0z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Apply your dream job
+                </h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  quis vitae sem at tortor varius consectetur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2">
+          <img src="/images/caro1.jpg" alt="" class="w-5/6" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-4 mt-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:justify-between gap-10">
+          <!-- Logo and Description -->
+          <div class="mb-6 md:mb-0 w-1/2">
+            <div class="flex items-center mb-4">
+              <span class="text-2xl font-bold text-green-500">E</span>
+              <span class="text-2xl font-bold text-white">Job</span>
+            </div>
+            <p class="text-gray-400">
+              Your dream job is just a click away. Explore new opportunities
+              with EJob.
+            </p>
+          </div>
+          <!-- Navigation Links -->
+          <div class="flex space-x-8 w-1/2 justify-around">
+            <div class="">
+              <h3 class="text-lg font-semibold mb-4">Company</h3>
+              <ul>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white"
+                    >About Us</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white">Careers</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white">Press</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Resources</h3>
+              <ul>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white">Support</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-gray-400 hover:text-white"
+                    >Terms of Service</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center mt-2 border-t border-gray-700 pt-2"
+        >
+          <p class="text-gray-400 text-sm">
+            &copy; 2024 EJob. All rights reserved.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <!-- Social Media Icon (Example: Facebook) -->
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.675 0h-21.35c-.734 0-1.325.591-1.325 1.325v21.351c0 .733.591 1.324 1.325 1.324h11.495v-9.3h-3.1v-3.6h3.1v-2.7c0-3.1 1.9-4.8 4.7-4.8 1.3 0 2.4.1 2.7.1v3.2h-1.8c-1.5 0-1.8.7-1.8 1.7v2.3h3.5l-.5 3.6h-3v9.3h5.8c.734 0 1.325-.591 1.325-1.325v-21.351c0-.734-.591-1.325-1.325-1.325z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <!-- Social Media Icon (Example: Twitter) -->
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.897-.959-2.173-1.56-3.591-1.56-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124-4.083-.205-7.702-2.158-10.126-5.134-.422.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.247-2.228-.616v.062c0 2.385 1.698 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.376 4.604 3.416-1.68 1.319-3.809 2.105-6.115 2.105-.398 0-.79-.023-1.17-.069 2.188 1.396 4.768 2.209 7.548 2.209 9.057 0 14.009-7.497 14.009-13.986 0-.209 0-.42-.016-.63.962-.689 1.8-1.56 2.462-2.548l-.047-.02z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <!-- Social Media Icon (Example: LinkedIn) -->
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.225 0h-20.449c-.982 0-1.776.794-1.776 1.775v20.449c0 .981.794 1.776 1.776 1.776h20.449c.981 0 1.776-.795 1.776-1.776v-20.449c0-.981-.795-1.775-1.776-1.775zm-13.869 20.449h-3.306v-11.025h3.306v11.025zm-1.654-12.586c-1.054 0-1.91-.856-1.91-1.91s.856-1.91 1.91-1.91 1.91.856 1.91 1.91-.856 1.91-1.91 1.91zm14.051 12.586h-3.306v-5.602c0-1.337-.026-3.061-1.867-3.061-1.867 0-2.154 1.46-2.154 2.963v5.701h-3.306v-11.025h3.175v1.508h.045c.442-.839 1.522-1.724 3.135-1.724 3.353 0 3.973 2.208 3.973 5.081v6.161z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const heroSwiper = new Swiper(".hero-swiper", {
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 9000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>

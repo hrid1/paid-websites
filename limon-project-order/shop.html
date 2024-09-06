@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Shop</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white">
+      <nav
+        class="container mx-auto p-4 flex justify-center items-center font-bold"
+      >
+        <a href="#" class="text-2xl">Bike Shop</a>
+        <button class="block md:hidden text-gray-200 focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden md:flex flex-grow justify-center space-x-4">
+          <a href="index.html" class="hover:text-gray-300">Home</a>
+          <a href="/shop.html" class="hover:text-gray-300">Shop Bikes</a>
+          <a href="/about.html" class="hover:text-gray-300">About Us</a>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Main Content (Shop Page) -->
+    <main class="container mx-auto px-6 py-12">
+
+        
+        <!-- shop bikes -->
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-12 text-center">Shop Bikes</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8">
+          <!-- Product Card 1 -->
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 hover:shadow-2xl transition duration-300">
+            <img src="images/featured/shop-bike2.jpg" alt="Bike 1" class="w-full h-96 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition duration-300">Mountain Bike</h3>
+              <p class="text-xl text-gray-600 mt-2">$299.99</p>
+              <a href="product1.html" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg py-2 px-4 rounded transition duration-300">View Product</a>
+            </div>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 hover:shadow-2xl transition duration-300">
+            <img src="images/featured/shop-bike3.jpg" alt="Bike 2" class="w-full h-96 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition duration-300">Road Bike</h3>
+              <p class="text-xl text-gray-600 mt-2">$499.99</p>
+              <a href="product2.html" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg py-2 px-4 rounded transition duration-300">View Product</a>
+            </div>
+          </div>
+          <!-- Product Card 3 -->
+          <div class="group relative bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 hover:shadow-2xl transition duration-300">
+            <img src="images/bike3.jpg" alt="Bike 3" class="w-full h-96 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition duration-300">Hybrid Bike</h3>
+              <p class="text-xl text-gray-600 mt-2">$399.99</p>
+              <a href="product3.html" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg py-2 px-4 rounded transition duration-300">View Product</a>
+            </div>
+          </div>
+        
+
+
+        <!-- promotion -->
+       
+      </main>
+
+      <section class="bg-gradient-to-r from-blue-400 to-purple-600 text-white py-12 px-6">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold mb-8 text-center">Special Offers</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Promotion Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 text-gray-800">
+              <h3 class="text-xl font-semibold mb-4">20% Off All Mountain Bikes</h3>
+              <p class="text-lg mb-4">Use code MTB20 at checkout to get 20% off all mountain bikes!</p>
+              <a href="#" class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Shop Now</a>
+            </div>
+            <!-- Promotion Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 text-gray-800">
+              <h3 class="text-xl font-semibold mb-4">Free Shipping on Orders Over $100</h3>
+              <p class="text-lg mb-4">Enjoy free shipping on all orders over $100. No code needed!</p>
+              <a href="#" class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Shop Now</a>
+            </div>
+            <!-- Promotion Card 3 -->
+            <!-- Add more promotion cards here -->
+          </div>
+        </div>
+      </section>
+      
+
+  
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- About Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <p class="text-sm">
+              Bike Shop is your ultimate destination for high-quality bikes. We
+              aim to provide a wide range of bikes to suit every rider's needs
+              and preferences.
+            </p>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="text-sm">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Contact Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+            <p class="text-sm">
+              123 Bike Street<br />Cityville, State 12345<br />Email:
+              info@bikeshop.com<br />Phone: 123-456-7890
+            </p>
+          </div>
+          <!-- Social Media -->
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-sm">Facebook</a>
+              <a href="#" class="text-sm">Twitter</a>
+              <a href="#" class="text-sm">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

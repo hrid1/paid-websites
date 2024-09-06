@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Search Website</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-gray-100 p-4 shadow-md">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center">
+          <!-- Logo -->
+          <span class="text-2xl font-bold text-green-500">Elect</span>
+          <span class="text-2xl font-bold text-gray-900">Job</span>
+        </div>
+        <div class="flex space-x-6">
+          <!-- Navigation Links -->
+          <a href="index.html" class="text-gray-700 hover:text-gray-900 font-semibold">Home</a>
+          <a href="/about.html" class="text-gray-700 hover:text-gray-900 font-semibold">About</a>
+          <a href="/career.html" class="text-gray-700 hover:text-gray-900 font-semibold"
+            >Career </a
+          >
+          <a
+            href="/register.html"
+            class="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600"
+            >Register</a
+          >
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <!-- <section class="bg-white py-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Find Your Dream Job</h1>
+            <p class="text-gray-600 mb-8">Search and apply for the latest job vacancies.</p>
+            <input type="text" placeholder="Job title, keywords, or company" class="border border-gray-300 p-2 rounded-md w-1/2">
+            <button class="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600">Search</button>
+        </div>
+    </section> -->
+
+    <!-- Hero Section with Carousel -->
+    <section class="bg-white pb-6">
+      <div class="max-w-full mx-auto">
+        <!-- Slider main container -->
+        <div class="swiper-container hero-swiper h-[80vh] w-full">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide text-center">
+              <img
+                src="images/carosol1.jpg"
+                alt="Image 1"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide text-center">
+              <img
+                src="images/carosol2.jpg"
+                alt="Image 2"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide text-center">
+              <img
+                src="images/carosol3.jpg"
+                alt="Image 3"
+                class="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-12 mt-2">
+      <div class="max-w-7xl mx-auto text-center">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">
+          Find Your <span class="text-green-500"> Dream Job</span>
+        </h1>
+        <p class="text-gray-600 mb-8">
+          Search and apply for the latest job vacancies.
+        </p>
+        <input
+          type="text"
+          placeholder="Job title, keywords, or company"
+          class="border border-gray-300 p-2 rounded-md w-1/2"
+        />
+        <button
+          class="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600"
+        >
+          Search
+        </button>
+      </div>
+    </section>
+
+    <!-- Job category -->
+    <div class="max-w-7xl mx-auto mt-4">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Browse <span class="text-green-500">Job Category</span></h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Category Item -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-green-500 mb-4">
+                    <!-- Icon for Art & Design -->
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l-3 3m0 0l-3-3m3 3v-4.586A1.5 1.5 0 019.793 8.707L12 6.5l2.207 2.207A1.5 1.5 0 0117 11.414V16m-3 3h3m0 0l3-3m-3 3v-4m-6-10a9 9 0 100 18 9 9 0 000-18z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Art & Design</h3>
+                <p class="text-gray-600">3500 Job Vacancy</p>
+            </div>
+            <!-- Repeat Category Item for each category -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-green-500 mb-4">
+                    <!-- Icon for UI/UX Design -->
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h4v6H3zm14 0h4v6h-4zM6 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H7a1 1 0 01-1-1v-4zm8 0a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">UI/UX Design</h3>
+                <p class="text-gray-600">750 Job Vacancy</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-green-500 mb-4">
+                    <!-- Icon for IT & Software -->
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h3m0 0a3 3 0 100 6h3m-6-6v6m6-6v6m4-6h3m0 0a3 3 0 100 6h3m-6-6v6m6-6v6M5 18h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">IT & Software</h3>
+                <p class="text-gray-600">8520 Job Vacancy</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-green-500 mb-4">
+                    <!-- Icon for Business Development -->
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4v16h16V4H3z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Business Development</h3>
+                <p class="text-gray-600">120 Job Vacancy</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-green-500 mb-4">
+                    <!-- Icon for Property -->
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l-3 3m0 0l-3-3m3 3V4.5M16 3h5v12a2 2 0 01-2 2H5a2 2 0 01-2-2V5m14 14v1a3 3 0 003 3h0a3 3 0 003-3v-1m-3 3v1a3 3 0 003 3h0a3 3 0 003-3v-1m-9-9h.01"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Property</h3>
+                <p class="text-gray-600">1200 Job Vacancy</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-green-500 mb-4">
+                    <!-- Icon for Marketing -->
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M9 16h.01M15 16h.01M12 8h.01M6 9a6 6 0 0112 0v6a6 6 0 01-12 0V9z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Marketing</h3>
+                <p class="text-gray-600">1920 Job Vacancy</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-green-500 mb-4">
+                    <!-- Icon for Education -->
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M16 10h.01M12 16v1a2 2 0 11-4 0v-1M9 4h6M9 8h6M7 12h10m-5 6v1a2 2 0 11-4 0v-1"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Education</h3>
+                <p class="text-gray-600">10K Job Vacancy</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-green-500 mb-4">
+                    <!-- Icon for Accounting & Finance -->
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Accounting & Finance</h3>
+                <p class="text-gray-600">2200 Job Vacancy</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-4 mt-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:justify-between gap-10 ">
+            <!-- Logo and Description -->
+            <div class="mb-6 md:mb-0  w-1/2">
+                <div class="flex items-center mb-4">
+                    <span class="text-2xl font-bold text-green-500">E</span>
+                    <span class="text-2xl font-bold text-white">Job</span>
+                </div>
+                <p class="text-gray-400">Your dream job is just a click away. Explore new opportunities with EJob.</p>
+            </div>
+            <!-- Navigation Links -->
+            <div class="flex space-x-8 w-1/2  justify-around">
+                <div class="">
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Support</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between items-center mt-2 border-t border-gray-700 pt-2">
+            <p class="text-gray-400 text-sm">&copy; 2024 EJob. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <!-- Social Media Icon (Example: Facebook) -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.675 0h-21.35c-.734 0-1.325.591-1.325 1.325v21.351c0 .733.591 1.324 1.325 1.324h11.495v-9.3h-3.1v-3.6h3.1v-2.7c0-3.1 1.9-4.8 4.7-4.8 1.3 0 2.4.1 2.7.1v3.2h-1.8c-1.5 0-1.8.7-1.8 1.7v2.3h3.5l-.5 3.6h-3v9.3h5.8c.734 0 1.325-.591 1.325-1.325v-21.351c0-.734-.591-1.325-1.325-1.325z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <!-- Social Media Icon (Example: Twitter) -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.897-.959-2.173-1.56-3.591-1.56-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124-4.083-.205-7.702-2.158-10.126-5.134-.422.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.247-2.228-.616v.062c0 2.385 1.698 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.376 4.604 3.416-1.68 1.319-3.809 2.105-6.115 2.105-.398 0-.79-.023-1.17-.069 2.188 1.396 4.768 2.209 7.548 2.209 9.057 0 14.009-7.497 14.009-13.986 0-.209 0-.42-.016-.63.962-.689 1.8-1.56 2.462-2.548l-.047-.02z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <!-- Social Media Icon (Example: LinkedIn) -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.225 0h-20.449c-.982 0-1.776.794-1.776 1.775v20.449c0 .981.794 1.776 1.776 1.776h20.449c.981 0 1.776-.795 1.776-1.776v-20.449c0-.981-.795-1.775-1.776-1.775zm-13.869 20.449h-3.306v-11.025h3.306v11.025zm-1.654-12.586c-1.054 0-1.91-.856-1.91-1.91s.856-1.91 1.91-1.91 1.91.856 1.91 1.91-.856 1.91-1.91 1.91zm14.051 12.586h-3.306v-5.602c0-1.337-.026-3.061-1.867-3.061-1.867 0-2.154 1.46-2.154 2.963v5.701h-3.306v-11.025h3.175v1.508h.045c.442-.839 1.522-1.724 3.135-1.724 3.353 0 3.973 2.208 3.973 5.081v6.161z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const heroSwiper = new Swiper(".hero-swiper", {
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 9000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>

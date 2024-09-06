@@ -1,0 +1,34 @@
+/* Custom CSS */
+
+/* Set navbar brand color */
+.navbar-brand {
+    color: #fff;
+  }
+  
+  /* Set active navbar link color */
+  .navbar-nav .nav-link.active {
+    color: #fff;
+  }
+  
+  /* Set carousel caption text color */
+  .carousel-caption {
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+  }
+  
+  /* About section style */
+  #about {
+    background-color: #f8f9fa;
+  }
+  
+  /* Footer style */
+  footer {
+    color: #fff;
+  }
+
+  .carousel-item img{
+    height: 580px;
+    width: 900px;
+}
+
+  

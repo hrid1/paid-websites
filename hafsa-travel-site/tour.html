@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-white shadow">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold text-blue-600">TravelCo</a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="hidden md:flex space-x-4 ml-10 font-semibold">
+          <a href="/index.html" class="text-gray-700 hover:text-blue-600"
+            >Home</a
+          >
+
+          <a href="/tour.html" class="text-gray-700 hover:text-blue-600"
+            >Tours</a
+          >
+          <a href="/about.html" class="text-gray-700 hover:text-blue-600">About Us</a>
+          
+        </nav>
+
+        <!-- Search Bar -->
+        <div class="hidden md:flex items-center space-x-2 mr-5">
+          <input
+            type="text"
+            class="input input-bordered"
+            placeholder="Search..."
+          />
+          <button class="btn btn-primary">Search</button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Booking Status Table -->
+    <div class="container mx-auto mt-8 w-2/3">
+      <h3 class="text-lg font-bold mb-4">Booking Status</h3>
+      <table class="table w-full border rounded">
+        <thead>
+          <tr>
+            <th class="px-4 py-2">Tour Name</th>
+            <th class="px-4 py-2">Date</th>
+            <th class="px-4 py-2">Available Slots</th>
+            <th class="px-4 py-2">Bookings Made</th>
+            <th class="px-4 py-2">Remaining Slots</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="px-4 py-2">Beaches of Bali</td>
+            <td class="px-4 py-2">June 15, 2024</td>
+            <td class="px-4 py-2">20</td>
+            <td class="px-4 py-2">12</td>
+            <td class="px-4 py-2">8</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2">Safari Adventure in Kenya</td>
+            <td class="px-4 py-2">July 10, 2024</td>
+            <td class="px-4 py-2">15</td>
+            <td class="px-4 py-2">10</td>
+            <td class="px-4 py-2">5</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2">Safari Adventure in Kenya</td>
+            <td class="px-4 py-2">July 10, 2024</td>
+            <td class="px-4 py-2">15</td>
+            <td class="px-4 py-2">10</td>
+            <td class="px-4 py-2">5</td>
+          </tr>
+          <!-- Add more rows for other tours -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Top Tours Section -->
+    <section class="bg-gray-700 py-12 text-gray-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 text-white">
+          Top Tours
+        </h2>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Tour 1 -->
+          <div class="card bg-white shadow-lg">
+            <figure>
+              <img
+                src="images/tour1.jpg"
+                alt="Tour 1"
+                class="w-full"
+              />
+            </figure>
+            <div class="card-body">
+              <h3 class="card-title text-xl font-semibold">
+                Beautiful Beaches of Bali
+              </h3>
+              <p>
+                Explore the stunning beaches and vibrant culture of Bali on this
+                7-day tour.
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Tour 2 -->
+          <div class="card bg-white shadow-lg">
+            <figure>
+              <img
+              src="images/tour2.jpg"
+                alt="Tour 2"
+                class="w-full"
+              />
+            </figure>
+            <div class="card-body">
+              <h3 class="card-title text-xl font-semibold">
+                Safari Adventure in Kenya
+              </h3>
+              <p>
+                Experience the wildlife and breathtaking landscapes of Kenya on
+                this 10-day safari.
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Tour 3 -->
+          <div class="card bg-white shadow-lg">
+            <figure>
+              <img
+              src="images/tour3.jpg"
+                alt="Tour 3"
+                class="w-full"
+              />
+            </figure>
+            <div class="card-body">
+              <h3 class="card-title text-xl font-semibold">
+                Cultural Journey through Japan
+              </h3>
+              <p>
+                Immerse yourself in the rich culture and history of Japan on
+                this 12-day tour.
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Add more tour cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- About Us -->
+          <div>
+            <h3 class="text-lg font-bold mb-4">About Us</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              scelerisque erat sed lacus congue, at varius enim vehicula.
+            </p>
+          </div>
+
+          <!-- Contact Information -->
+          <div>
+            <h3 class="text-lg font-bold mb-4">Contact</h3>
+            <p>123 Main Street</p>
+            <p>City, State, ZIP</p>
+            <p>Phone: +1 123-456-7890</p>
+            <p>Email: info@example.com</p>
+          </div>
+          <!-- Social Media Links -->
+          <div>
+            <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+            <div class="flex space-x-4 text-white">
+              <a href="#" class="text-xl hover:text-blue-400"
+                ><i class="fab fa-facebook"></i>facebook</a
+              >
+              <a href="#" class="text-xl hover:text-blue-400"
+                ><i class="fab fa-twitter"></i>youtube</a
+              >
+              <a href="#" class="text-xl hover:text-blue-400"
+                ><i class="fab fa-instagram"></i>instagram</a
+              >
+              <a href="#" class="text-xl hover:text-blue-400"
+                ><i class="fab fa-linkedin"></i>tiktok</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="mt-8 text-center">
+          <p>&copy; 2024 TravelCo. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Tailwind CSS and DaisyUI script -->
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.js"></script>
+  </body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - Indoor Plant Store</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-green-800 text-white">
+      <nav class="container mx-auto p-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold">Indoor Plant Store</a>
+        <button class="block md:hidden text-gray-200 focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden md:flex space-x-4">
+          <a href="index.html" class="hover:text-gray-300">Home</a>
+          <a href="shop.html" class="hover:text-gray-300">Shop Plants</a>
+          <a href="about.html" class="hover:text-gray-300">About Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container mx-auto my-8 w-4/5">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">
+        Tree Information
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gradient-to-r from-green-400 to-blue-500 text-white">
+            <tr>
+              <th
+                scope="col"
+                class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider border"
+              >
+                Tree Type
+              </th>
+              <th
+                scope="col"
+                class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider border"
+              >
+                Height (ft)
+              </th>
+              <th
+                scope="col"
+                class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider border"
+              >
+                Foliage Color
+              </th>
+              <th
+                scope="col"
+                class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider border"
+              >
+                Price
+              </th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <tr class="hover:bg-gray-100">
+              <td class="px-6 py-4 whitespace-nowrap border">Maple</td>
+              <td class="px-6 py-4 whitespace-nowrap border">20</td>
+              <td class="px-6 py-4 whitespace-nowrap border">
+                Green, Red, Yellow
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap border">$50</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="px-6 py-4 whitespace-nowrap border">Oak</td>
+              <td class="px-6 py-4 whitespace-nowrap border">30</td>
+              <td class="px-6 py-4 whitespace-nowrap border">Green</td>
+              <td class="px-6 py-4 whitespace-nowrap border">$70</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="px-6 py-4 whitespace-nowrap border">Pine</td>
+              <td class="px-6 py-4 whitespace-nowrap border">40</td>
+              <td class="px-6 py-4 whitespace-nowrap border">Green</td>
+              <td class="px-6 py-4 whitespace-nowrap border">$60</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="px-6 py-4 whitespace-nowrap border">Birch</td>
+              <td class="px-6 py-4 whitespace-nowrap border">15</td>
+              <td class="px-6 py-4 whitespace-nowrap border">Yellow</td>
+              <td class="px-6 py-4 whitespace-nowrap border">$45</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="px-6 py-4 whitespace-nowrap border">Cherry Blossom</td>
+              <td class="px-6 py-4 whitespace-nowrap border">25</td>
+              <td class="px-6 py-4 whitespace-nowrap border">Pink, White</td>
+              <td class="px-6 py-4 whitespace-nowrap border">$80</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Main Content (Shop Page) -->
+    <main class="container mx-auto my-8">
+      <h1 class="text-3xl font-semibold text-gray-800 mb-6 mx-8">
+        Shop Indoor Plants
+      </h1>
+      <!-- Add your shop content here -->
+      <!-- Example: Product Grid -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-6 mx-8"
+      >
+        <!-- Product Cards -->
+        <!-- Example Product Card 1 -->
+        <div class="bg-white shadow-xl rounded-lg overflow-hidden w-full">
+          <div class="md:flex">
+            <div class="md:flex-shrink-0">
+              <img
+                class="w-full h-48 object-cover md:h-full md:w-48"
+                src="/images/plant-buy-1.jpg"
+                alt="Fiddle Leaf Fig"
+              />
+            </div>
+            <div class="p-8">
+              <h2 class="text-2xl font-bold text-gray-900">Fiddle Leaf Fig</h2>
+              <p class="mt-2 text-gray-600">
+                A popular indoor plant known for its large, glossy leaves.
+                Perfect for adding a touch of nature to your home.
+              </p>
+              <p class="mt-2 text-gray-900 font-semibold">$59.99</p>
+              <p class="mt-2 text-gray-600">
+                Water: Weekly <br />
+                Light: Bright, indirect sunlight <br />
+                Size: 3-4 feet tall
+              </p>
+              <div class="mt-4">
+                <button
+                  class="px-4 py-2 bg-green-500 text-white text-sm font-semibold rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white shadow-xl rounded-lg overflow-hidden w-full">
+          <div class="md:flex">
+            <div class="md:flex-shrink-0">
+              <img
+                class="w-full h-48 object-cover md:h-full md:w-48"
+                src="/images/plant-bye-3.jpg"
+                alt="Snake Plant"
+              />
+            </div>
+            <div class="p-8">
+              <h2 class="text-2xl font-bold text-gray-900">Snake Plant</h2>
+              <p class="mt-2 text-gray-600">
+                An easy-to-care-for plant that thrives in low light. Ideal for
+                beginners and busy individuals.
+              </p>
+              <p class="mt-2 text-gray-900 font-semibold">$39.99</p>
+              <p class="mt-2 text-gray-600">
+                Water: Every 2-3 weeks <br />
+                Light: Low to bright, indirect sunlight <br />
+                Size: 1-2 feet tall
+              </p>
+              <div class="mt-4">
+                <button
+                  class="px-4 py-2 bg-green-500 text-white text-sm font-semibold rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more product cards here -->
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- About Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <p class="text-sm">
+              Indoor Plant Store is your one-stop destination for high-quality
+              indoor plants. We strive to provide a wide variety of plants to
+              enhance your indoor spaces and promote a healthier lifestyle.
+            </p>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="text-sm">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Contact Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+            <p class="text-sm">
+              123 Green Street<br />Cityville, State 12345<br />Email:
+              info@indoorplantstore.com<br />Phone: 123-456-7890
+            </p>
+          </div>
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-sm">Facebook</a>
+              <a href="#" class="text-sm">Twitter</a>
+              <a href="#" class="text-sm">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Footer -->
+      <div class="border-t border-gray-700 mt-6 pt-4 text-sm text-center">
+        <p>&copy; 2024 Indoor Plant Store. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Tailwind JS for mobile menu toggle (optional) -->
+    <script>
+      document.querySelector("button").addEventListener("click", () => {
+        document.querySelector("nav div").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

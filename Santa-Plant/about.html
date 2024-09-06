@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Indoor Plant Store</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-green-800 text-white">
+      <nav class="container mx-auto p-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold">Indoor Plant Store</a>
+        <button class="block md:hidden text-gray-200 focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden md:flex space-x-4">
+          <a href="index.html" class="hover:text-gray-300">Home</a>
+          <a href="shop.html" class="hover:text-gray-300">Shop Plants</a>
+          <a href="about.html" class="hover:text-gray-300">About Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content (About Us Page) -->
+    <main class="container mx-auto my-8 px-4">
+      <h1 class="text-3xl font-semibold text-gray-800 mb-6">About Us</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <img
+            src="images/about/team.jpg"
+            alt="Our Team"
+            class="w-full rounded-lg shadow-md"
+          />
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold mb-4">Who We Are</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Indoor Plant Store is dedicated to bringing nature into your home
+            with our wide selection of indoor plants. Our team of experts is
+            passionate about providing high-quality plants and exceptional
+            customer service to plant lovers everywhere.
+          </p>
+          <h2 class="text-xl font-semibold mt-6 mb-4">Our Mission</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Our mission is to promote wellness and happiness by making it easy
+            for everyone to enjoy the beauty and benefits of indoor plants. We
+            believe that having plants in your home improves air quality,
+            reduces stress, and enhances overall well-being.
+          </p>
+        </div>
+      </div>
+
+      <!-- contact us -->
+      <section class="container mx-auto my-8 px-4">
+        <h1 class="text-3xl font-semibold text-gray-800 mb-6">Contact Us</h1>
+        <form action="#" method="POST" class="max-w-lg">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-semibold"
+              >Your Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-green-500"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-semibold"
+              >Your Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-green-500"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-semibold"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              class="w-full border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-green-500"
+              rows="4"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- About Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <p class="text-sm">
+              Indoor Plant Store is your one-stop destination for high-quality
+              indoor plants. We strive to provide a wide variety of plants to
+              enhance your indoor spaces and promote a healthier lifestyle.
+            </p>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="text-sm">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Contact Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+            <p class="text-sm">
+              123 Green Street<br />Cityville, State 12345<br />Email:
+              info@indoorplantstore.com<br />Phone: 123-456-7890
+            </p>
+          </div>
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-sm">Facebook</a>
+              <a href="#" class="text-sm">Twitter</a>
+              <a href="#" class="text-sm">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Footer -->
+      <div class="border-t border-gray-700 mt-6 pt-4 text-sm text-center">
+        <p>&copy; 2024 Indoor Plant Store. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Tailwind JS for mobile menu toggle (optional) -->
+    <script>
+      document.querySelector("button").addEventListener("click", () => {
+        document.querySelector("nav div").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
